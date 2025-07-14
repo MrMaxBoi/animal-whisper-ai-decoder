@@ -2,41 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Animal Sound Decoder Design System - Nature Inspired 
+All colors MUST be HSL for proper theming.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Nature Base Colors */
+    --background: 25 20% 97%;
+    --foreground: 140 15% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Card System */
+    --card: 25 25% 98%;
+    --card-foreground: 140 15% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 25 25% 98%;
+    --popover-foreground: 140 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Forest Primary - Deep Forest Green */
+    --primary: 140 40% 28%;
+    --primary-foreground: 25 20% 97%;
+    --primary-glow: 140 35% 45%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Earth Secondary - Warm Earth Tone */
+    --secondary: 25 30% 85%;
+    --secondary-foreground: 140 15% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Natural Muted - Soft Sage */
+    --muted: 25 20% 90%;
+    --muted-foreground: 140 10% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Wildlife Accent - Bird Blue */
+    --accent: 200 45% 75%;
+    --accent-foreground: 140 15% 15%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Alert Red - Warning Call */
+    --destructive: 10 75% 55%;
+    --destructive-foreground: 25 20% 97%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Natural Borders */
+    --border: 25 15% 85%;
+    --input: 25 15% 85%;
+    --ring: 140 40% 28%;
 
-    --radius: 0.5rem;
+    /* Gradients */
+    --gradient-forest: linear-gradient(135deg, hsl(140 40% 28%), hsl(140 35% 45%));
+    --gradient-earth: linear-gradient(180deg, hsl(25 30% 85%), hsl(25 25% 78%));
+    --gradient-sky: linear-gradient(135deg, hsl(200 45% 75%), hsl(180 40% 70%));
+    --gradient-dawn: linear-gradient(45deg, hsl(25 40% 80%), hsl(45 50% 85%), hsl(200 35% 80%));
+
+    /* Shadows */
+    --shadow-nature: 0 4px 20px -2px hsl(140 40% 28% / 0.15);
+    --shadow-glow: 0 0 30px hsl(140 35% 45% / 0.2);
+    --shadow-soft: 0 2px 10px -1px hsl(25 15% 60% / 0.1);
+
+    /* Animations */
+    --transition-nature: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-gentle: all 0.2s ease-out;
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
